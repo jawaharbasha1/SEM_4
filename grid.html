@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .section{
+            display: grid;
+            align-items: center;
+            border: 1px solid black;
+            padding: 30px 30px;
+            grid-template-areas: 
+            'a a b b b c c'
+            'a a d d d c c '
+            'e e d d d f f';
+
+        }
+        .items{
+            border: 1px solid black;
+            background-color: burlywood;
+        }
+        #A{
+            grid-area:  a;
+            padding: 20px;
+        }
+        #B{
+            grid-area:  b;
+            padding: 20px;
+        }
+        #C{
+            grid-area:  c;
+            padding: 20px;
+        }
+        #D{
+            grid-area:  d;
+            padding: 20px;
+        }
+        #E{
+            grid-area:  e;
+            padding: 20px;
+        }
+        #F{
+            grid-area:  f;
+            padding: 20px;
+        }
+        #G{
+            grid-area:  g;
+            padding: 20px;
+        }
+        #H{
+            grid-area:  h;
+            padding: 20px;
+        }
+        #I{
+            grid-area:  i;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="items" id="A">1</div>
+        <div class="items" id="B">2</div>
+        <div class="items" id="C">3</div>
+        <div class="items" id="D">4</div>
+        <div class="items" id="E">5</div>
+        <div class="items" id="F">6</div>
+        <div class="items" id="G">7</div>
+        <div class="items" id="H">8</div>
+        <div class="items" id="I">9</div>
+    </div>
+</body>
+</html>
